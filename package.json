@@ -1,22 +1,29 @@
 {
-  "name": "freeCodeCamp",
+  "name": "timestamp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lucasmonteiro001/freeCodeCamp.git"
-  },
   "author": "Lucas Monteiro",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lucasmonteiro001/freeCodeCamp/issues"
-  },
-  "homepage": "https://github.com/lucasmonteiro001/freeCodeCamp",
   "dependencies": {
-    "express": "^4.14.0"
+    "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
+    "compression": "^1.6.2",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "helmet": "^2.1.1",
+    "mocha": "^2.5.3",
+    "moment": "^2.13.0",
+    "mongoose": "^4.5.2",
+    "mongoose-schema-extend": "^0.2.2",
+    "nodemon": "^1.9.2",
+    "request-param": "^1.0.0",
+    "should": "^9.0.2",
+    "supertest": "^1.2.0",
+    "validator": "^5.4.0",
+    "winston": "^2.2.0"
   }
 }
