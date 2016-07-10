@@ -17,6 +17,7 @@
     "helmet": "^2.1.1",
     "mocha": "^2.5.3",
     "moment": "^2.13.0",
+    "momentjs": "^1.1.10",
     "mongoose": "^4.5.2",
     "mongoose-schema-extend": "^0.2.2",
     "nodemon": "^1.9.2",
