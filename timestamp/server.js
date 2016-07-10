@@ -46,7 +46,7 @@ app.get('/:time', function(req, res) {
         formattedDate = date.format('MMMM, DD YYYY');
 
     }
-    else { // if time is not a number
+    else { // If time is not a number
 
         time = req.param('time');
 
