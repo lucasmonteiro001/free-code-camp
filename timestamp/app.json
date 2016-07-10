@@ -3,5 +3,5 @@
   "description": "Description goes here",
   "repository": "https://github.com/lucasmonteiro001/freeCodeCamp/tree/master/timestamp",
   "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "static", "date", "timestamp"]
+  "keywords": ["node", "herokexpress", "static", "date", "timestamp"]
 }

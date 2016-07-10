@@ -50,19 +50,25 @@ app.get('/:time', function(req, res) {
 
         time = req.param('time');
 
-        date = moment(new Date(time).toISOString());
+        try {
+            date = moment(new Date(time).toISOString());
 
-        // if no convertion was possible, return null
-        if(date.format() === "Invalid date") {
+            // if no convertion was possible, return null
+            if(date.format() === "Invalid date") {
 
+                unixtimestamp = null;
+                formattedDate = null;
+            }
+            else {
+
+                unixtimestamp = date.format('x');
+                formattedDate = date.format('MMMM, DD YYYY');
+            }
+        } catch (e) {
             unixtimestamp = null;
             formattedDate = null;
         }
-        else {
 
-            unixtimestamp = date.format('x');
-            formattedDate = date.format('MMMM, DD YYYY');
-        }
     }
 
     res.json({

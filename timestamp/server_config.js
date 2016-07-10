@@ -8,7 +8,7 @@ var app = express();
 
 module.exports = app;
 
-app.port = 3000;
+app.port = (process.env.PORT || 3000);
 
 var cors = require('cors');
 
