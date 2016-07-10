@@ -22,7 +22,7 @@ app.use(mid.escapeAndTrim);
 // Renders index if root is accessed
 app.get('/', function(req, res) {
 
-    res.sendFile('index.html'); // absolute path is inferred from pages/ folder (see at server_config.s)
+    res.render('index.html'); // absolute path is inferred from pages/ folder (see at server_config.s)
     
 });
 
