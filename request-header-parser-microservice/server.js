@@ -42,7 +42,7 @@ app.get('/api/whoami', function(req, res) {
 });
 
 /**
- * If route is not defined, return 404 status
+ * If route is not defined, return a message
  */
 app.get('*', function(req, res, next){
     res.status(200).json({msg: "Invalid route. You should access https://freecodecamp--request-header.herokuapp.com/api/whoami"});
