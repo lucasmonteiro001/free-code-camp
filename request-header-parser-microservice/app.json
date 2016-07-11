@@ -1,0 +1,7 @@
+{
+  "name": "Request header parser Microservice",
+  "description": "Description goes here",
+  "repository": "https://github.com/lucasmonteiro001/freeCodeCamp/tree/master/request-header-parser-microservice",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "herokexpress", "static", "date", "timestamp"]
+}

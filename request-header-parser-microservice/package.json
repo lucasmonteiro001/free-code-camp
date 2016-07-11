@@ -1,0 +1,35 @@
+{
+  "name": "request-header-parser-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "4.4.7",
+    "npm": "2.15.8"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
+    "compression": "^1.6.2",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "helmet": "^2.1.1",
+    "mocha": "^2.5.3",
+    "moment": "^2.13.0",
+    "momentjs": "^1.1.10",
+    "mongoose": "^4.5.2",
+    "mongoose-schema-extend": "^0.2.2",
+    "nodemon": "^1.9.2",
+    "request-param": "^1.0.0",
+    "should": "^9.0.2",
+    "supertest": "^1.2.0",
+    "validator": "^5.4.0",
+    "winston": "^2.2.0"
+  },
+  "author": "Lucas Monteiro",
+  "license": "ISC"
+}
