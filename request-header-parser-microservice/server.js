@@ -23,14 +23,14 @@ app.use(mid.escapeAndTrim);
 app.get('/api/whoami', function(req, res) {
 
     var userAgent = req.headers["user-agent"];
-    var ip = req.ip;
+    var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
     var lang = req.headers["accept-language"];
 
     var first = userAgent.indexOf('(');
     var last = userAgent.indexOf(')');
     var software = userAgent.substring(first + 1, last);
 
-    // gets only the first language accepted
+    // Gets only the first language accepted
     lang = lang.split(",")[0];
 
     res.json({
@@ -45,5 +45,5 @@ app.get('/api/whoami', function(req, res) {
  * If route is not defined, return 404 status
  */
 app.get('*', function(req, res, next){
-    res.status(404).end("Not Found!");
+    res.status(200).json({msg: "Invalid route. You should access https://freecodecamp--request-header.herokuapp.com/api/whoami"});
 });
