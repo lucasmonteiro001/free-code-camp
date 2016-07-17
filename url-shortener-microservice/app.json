@@ -1,0 +1,7 @@
+{
+  "name": "Url shortener Microservice",
+  "description": "Description goes here",
+  "repository": "https://github.com/lucasmonteiro001/freeCodeCamp/tree/master/url-shortener-microservice",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "herokexpress", "static", "date", "timestamp"]
+}
